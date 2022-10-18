@@ -123,10 +123,9 @@ library(dplyr);library(ggplot2)
 library(palmerpenguins)
 
 penguins %>% 
-  # count(species) %>% 
-  ggplot(aes(x = bill_length_mm , y = flipper_length_mm, color=island)) +
+  ggplot(aes(x=bill_length_mm , y=flipper_length_mm, color=species)) +
   geom_point() + 
-  scale_color_shinsengumi("red") + 
+  scale_color_shinsengumi("lightasagi") + 
   theme_minimal()
 
 
